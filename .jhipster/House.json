@@ -1,0 +1,46 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "inhabitant",
+      "otherEntityName": "person",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "house"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "device",
+      "otherEntityName": "device",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "house"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipName": "heater",
+      "otherEntityName": "heater",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "house"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "size",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "nbRoom",
+      "fieldType": "Integer"
+    }  
+  ],
+  "changelogDate": "20160314120358",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no"
+}

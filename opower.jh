@@ -1,0 +1,36 @@
+entity Person {
+    name String,
+    email String
+}
+
+entity House {
+	name String,
+    size Integer,
+    nbRoom Integer
+}
+
+entity Device {
+	name String,
+    conso Integer
+}
+
+entity Heater {
+	name String,
+    conso Integer
+}
+
+relationship ManyToMany {
+	Person{friend} to Person{friendOf}
+}
+
+relationship OneToMany {
+    House{inhabitant} to Person{house}
+}
+
+relationship OneToMany {
+	House{device} to Device{house}
+}
+
+relationship OneToMany {
+	House{heater} to Heater{house}
+}
